@@ -1,5 +1,7 @@
 <template>
-  <canvas id="chart"></canvas>
+  <div class="canvasWrap">
+    <canvas id="chart"></canvas>
+  </div>
 </template>
 
 <script>
@@ -29,6 +31,11 @@ const drawGraph = () => {
       }],
     },
     options: {
+      responsive: true,
+      fill: true,
+      pointRadius: 10,
+      pointHoverRadius: 100,
+      maintainAspectRatio: false,
       scales: {
         yAxes: [{
           ticks: {
@@ -36,13 +43,10 @@ const drawGraph = () => {
           },
         }],
       },
-      responsive: true,
-      fill: true,
-      pointRadius: 10,
-      pointHoverRadius: 100,
+
     },
   });
-  console.log(chart);
+  chart.width += 0;
 };
 
 export default {
@@ -57,4 +61,7 @@ export default {
 </script>
 
 <style scoped>
+.canvasWrap {
+  height: 50vh;
+}
 </style>
