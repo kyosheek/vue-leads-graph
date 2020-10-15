@@ -20,6 +20,11 @@ const routes = [
     name: 'Auth',
     component: () => import('../views/Auth.vue'),
   },
+  {
+    path: '/analytics',
+    name: 'Analytics',
+    component: () => import('../views/Analytics.vue'),
+  },
 ];
 
 const router = createRouter({

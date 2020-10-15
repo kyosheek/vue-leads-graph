@@ -1,5 +1,4 @@
 <template>
-  <h1>{{ title }}</h1>
   <form>
     <label for="id">ID сайта:<input id="id" type="text"></label>
     <button>Войти</button>
@@ -9,9 +8,6 @@
 <script>
 export default {
   name: 'AuthForm',
-  props: {
-    title: String,
-  },
 };
 </script>
 
