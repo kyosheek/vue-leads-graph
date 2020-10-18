@@ -1,7 +1,7 @@
 <template>
   <h1>LeadHit</h1>
   <div class="auth">
-    <AuthForm title="LeadHit"/>
+    <AuthForm />
   </div>
 </template>
 
