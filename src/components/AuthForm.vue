@@ -8,6 +8,7 @@
         type="text"
         v-model="inputId">
       </label>
+      <br/><br/>
       <button>Войти</button>
   </form>
   <div class="errorMsgWrapper">
@@ -69,5 +70,35 @@ export default {
 </script>
 
 <style scoped>
+form {
+  width: 25vw;
+}
 
+form, button, label, div {
+  float: left;
+}
+
+div {
+  width: 25vw;
+  margin-top: 20px;
+}
+
+input {
+  width: 23ch;
+  padding: 5px 10px 5px 10px;
+}
+
+input, label {
+  font-size: 18px;
+}
+
+button {
+  margin-top: 10px;
+  padding: 5px 10px 5px 10px;
+  border: 0;
+  background-color: #42b983;
+  color: #333333;
+  font-size: 18px;
+  border-radius: 4px;
+}
 </style>
