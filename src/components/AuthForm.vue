@@ -58,8 +58,8 @@ export default {
     },
   },
   watch: {
-    inputId: function(newInputId, oldInputId) {
-      if (newInputId !== oldInputId && this.error) {
+    inputId: function(newInputId, oldInputId) { // eslint-disable-line no-unused-vars
+      if (this.error) {
         this.error = false;
         this.errorMsg = '';
       }

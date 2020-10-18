@@ -15,5 +15,11 @@ export default {
   components: {
     Graph,
   },
+  beforeCreate() {
+    console.log('created');
+    if (!localStorage.getItem('leadhit-site-id')) {
+      this.$router.push('/auth');
+    }
+  },
 };
 </script>
